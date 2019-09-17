@@ -28,12 +28,12 @@ public class Main {
         String color2 = keyboard.next();
 
         // while loop to allow user to keep entering colors, or press q
-        while (color2 != "q") {
+        while (!color2.equals("q")) {
             colors.add(color2);
             System.out.println(colors);
-            if (colors.equals("q"));
-                colors.remove("q");
-                break;
+
+            System.out.println("Enter new color");
+            color2 = keyboard.next();
 
         }
         System.out.println(colors);
